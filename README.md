@@ -3,10 +3,7 @@
 
 Artefacto que permite la creacion de usuarios
 
-https://github.com/chidalgogalvez/javatest-spring-boot
-
-
-
+https://github.com/chidalgogalvez/java-test-spring-boot
 
 
 ## Tech Stack
