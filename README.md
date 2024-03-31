@@ -87,12 +87,6 @@ Para correr test, ejecute
 ```
 o puede usar la opcion run with coverage si usa el ide intelliJ
 
-
-## Authors
-
-- [@chidalgogalvez](https://www.github.com/chidalgogalvez)
-
-
 ## Aditional Features
 
 Las credenciales de acceso a la DB se encuentran en el archivo de configuración (application.yml)
@@ -100,13 +94,17 @@ Las credenciales de acceso a la DB se encuentran en el archivo de configuración
 - http://localhost:8080/h2-console/
 - http://localhost:8080/swagger-ui/index.html
 - http://localhost:8080/actuator
+- Implementación y uso de Lombok
 - Implementación de Looger
 - Wrapper con estructura de respuestas de los servicios "success and error"
 - Implementación de ControllerExceptionHandler
 - Implementacion de MapStruct para mapeo de datos
 - Arquitectura basado en capas: controller -> service -> repository -> entity
-- Implementació de Collections de postman ruta src-main-resources-postman
+- Implementación de Collections de postman ruta src-> main-> resources-> postman
 
+## Authors
+
+- [@chidalgogalvez](https://www.github.com/chidalgogalvez)
 
 
 ## 🚀 About Me
