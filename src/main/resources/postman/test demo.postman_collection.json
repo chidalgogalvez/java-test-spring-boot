@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d4e7f872-84fb-4ba5-9313-d34f7b4c4fa2",
+		"name": "test demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "953506"
+	},
+	"item": [
+		{
+			"name": "prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/prueba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"prueba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener User dado un UUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/1e7673cd-ca39-4b46-9d7d-264f18cb26fb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"1e7673cd-ca39-4b46-9d7d-264f18cb26fb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar User dado un UUID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/0656185f-d6d0-4912-b1ad-b9b87f9fbc30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"0656185f-d6d0-4912-b1ad-b9b87f9fbc30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Juan Rodriguez\",\n    \"email\": \"juan@rodriguez.org\",\n    \"password\": \"Hidalgo123#\",\n    \"phones\": [\n        {\n            \"number\": \"1234567\",\n            \"citycode\": \"1\",\n            \"countrycode\": \"57\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Juan Rodriguez Solar\",\n    \"email\": \"juan@rodriguez.org\",\n    \"password\": \"Hidalgo123#\",\n    \"isActive\": \"true\",\n    \"phones\": [\n        {\n            \"number\": \"1234567\",\n            \"citycode\": \"1\",\n            \"countrycode\": \"57\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/03c79ae4-5740-41e7-91f7-cdb7585d5907",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"03c79ae4-5740-41e7-91f7-cdb7585d5907"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
